@@ -6,6 +6,6 @@ You can install this by following the steps.
 
 1 clone this repo.
 
-2 install de deprencies with: ``npm install``
+2 install de dependencies with: ``npm install``
 
 3 run the application with: ``node appjs`` or with ``npm start``
