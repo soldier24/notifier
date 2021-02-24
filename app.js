@@ -12,7 +12,7 @@ const io = require("socket.io")(http, {
  var connectioncount = 0; 
  //de root, waar niks in zit.
 app.get('/', (req, res) => {
-   res.send('Notifier script!')
+   res.send('Notify server')
 });
 //momenteel verbonden clients.
 app.get('/stats', function(request, response){
@@ -21,8 +21,8 @@ app.get('/stats', function(request, response){
 //notificatie functie. Hier komt de notificatie in JSON binnen.
 //en versturen we het naar clients.
 app.post('/notify', function(request, response){
-    notifierdata = [request.body.shopid,request.body.shopname,request.body.product,request.body.time]
-    io.emit('notify', notifierdata);
+    notifierdata = [request.body.text] //data op een rijtje zetten.
+    io.emit('notify', notifierdata); //wegsturen richting de clients die hap.
     response.send('OK!');    //oke alles goed!
   });
 //connectie event!
