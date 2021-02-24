@@ -4,8 +4,8 @@ A simple notification server in Nodejs created to send a push notification to us
 The project is tested with NodeJS 14.x and runable on all platforms.
 You can install this by following the steps.
 
-1 clone this repo.
+1: clone this repo.
 
-2 install de dependencies with: ``npm install``
+2: install the dependencies with: ``npm install``
 
-3 run the application with: ``node appjs`` or with ``npm start``
+3: run the application with: ``node appjs`` or with ``npm start``
