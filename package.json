@@ -1,7 +1,7 @@
 {
   "name": "stockalert-notifier",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple notification server in Nodejs created to send a push notification to users that are connected to a webpage.",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -16,6 +16,6 @@
   "engines": {
     "node": "14"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Soldier24",
+  "license": "MIT"
 }
